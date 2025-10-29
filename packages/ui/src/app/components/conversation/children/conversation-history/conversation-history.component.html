@@ -1,0 +1,12 @@
+<section class="message-list">
+  @for (message of messageList; track message) {
+    <div [ngClass]="message.createdBy + ' message-container'">
+      <div class="message">
+        <markdown>{{ message.text }}</markdown>
+      </div>
+    </div>
+  }
+  @if(displayLoading) {
+    <div class="loading-indicator"></div>
+  }
+</section>
