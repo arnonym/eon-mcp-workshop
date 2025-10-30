@@ -1,0 +1,12 @@
+<section>
+  <a class="conversation-link" [routerLink]="''">
+    <div class="new">
+      <img src="add.svg" alt="Add" class="add-icon">
+      Start new
+    </div>
+  </a>
+  <br>
+  @for (conversation of sessionService.getAllConversations(); track conversation.id) {
+    <a class="conversation-link" [routerLink]="'/' + conversation.id">{{ conversation.title }}</a>
+  }
+</section>
