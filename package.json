@@ -1,0 +1,24 @@
+{
+  "name": "eon-mcp-workshop",
+  "version": "1.0.0",
+  "description": "Required software: - node / npm - docker - angular cli",
+  "main": "index.js",
+  "workspaces": [
+    "packages/ui",
+    "packages/mcp-server",
+    "packages/mcp-client"
+  ],
+  "scripts": {
+    "start:mcp-server": "npm run start --workspace=mcp-server",
+    "start:mcp-client": "npm run start --workspace=mcp-client",
+    "start:ui": "npm run start --workspace=ui"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

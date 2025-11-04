@@ -1,0 +1,26 @@
+{
+  "name": "simple-tool-call",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.78",
+    "@langchain/langgraph": "^0.4.9",
+    "@langchain/mcp-adapters": "^0.6.0",
+    "@langchain/openai": "^0.6.14",
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.3.35",
+    "openai": "^6.1.0",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}

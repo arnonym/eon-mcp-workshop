@@ -1,0 +1,60 @@
+section.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  padding: 0 3rem;
+
+  .loading-indicator {
+    /* HTML: <div class="loader"></div> */
+      width: 100px;
+      height: 40px;
+      --g: radial-gradient(farthest-side,#0000 calc(95% - 3px),#fff calc(100% - 3px) 98%,#0000 101%) no-repeat;
+      background: var(--g), var(--g), var(--g);
+      background-size: 20px 20px;
+      animation: l9 1s infinite alternate;
+    @keyframes l9 {
+      0% {
+        background-position: 0 50%, 50% 50%, 100% 50%;
+      }
+      20% {
+        background-position: 0 0, 50% 50%, 100% 50%;
+      }
+      40% {
+        background-position: 0 100%, 50% 0, 100% 50%;
+      }
+      60% {
+        background-position: 0 50%, 50% 100%, 100% 0;
+      }
+      80% {
+        background-position: 0 50%, 50% 50%, 100% 100%;
+      }
+      100% {
+        background-position: 0 50%, 50% 50%, 100% 50%;
+      }
+    }
+  }
+
+  .message-container {
+    display: flex;
+
+    &.user {
+      justify-content: flex-end;
+    }
+
+    &.ai {
+      .message {
+        background-color: #093a57;
+      }
+    }
+
+    .message {
+      max-width: 70%;
+
+      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0.1) 0 4px 12px 0, rgba(255, 255, 255, 0.2) 0 0 1px 0 inset;
+      border-radius: 1.5rem;
+      background-color: #3a3a3a;
+      padding: 0 1rem;
+    }
+  }
+}

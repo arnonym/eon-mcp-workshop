@@ -1,0 +1,19 @@
+.input-container {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    min-width: 40rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    background-color: #3a3a3a;
+    color: #d8d8d8;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0.1) 0 4px 12px 0, rgba(255, 255, 255, 0.2) 0 0 1px 0 inset;
+  }
+
+}
